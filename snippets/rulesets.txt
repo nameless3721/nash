@@ -1,7 +1,7 @@
 DIRECT,rules/LocalAreaNetwork.list
 DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
-DIRECT,rules/自定直连.list
-DIRECT,rules/自定代理.list
+DIRECT,rules/DIRECT.list
+🔰 节点选择,rules/PROXY.list
 🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
 🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Advertising.list
 Ⓜ️ 微软服务,rules/MSServices.list
