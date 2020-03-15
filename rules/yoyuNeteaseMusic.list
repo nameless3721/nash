@@ -1,4 +1,4 @@
-#Domain规则
+#Domain瑙勫垯
 DOMAIN-SUFFIX,163yun.com
 DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,music.126.net
@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,interface.music.163.com
 DOMAIN-SUFFIX,interface3.music.163.com
 DOMAIN-SUFFIX,mam.netease.com
 DOMAIN-SUFFIX,hz.netease.com
-#CIDR规则
+#CIDR瑙勫垯
 IP-CIDR,39.105.63.80/32
 IP-CIDR,45.254.48.1/32
 IP-CIDR,47.100.127.239/32
