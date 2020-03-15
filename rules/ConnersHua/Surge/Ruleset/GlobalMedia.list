@@ -33,6 +33,10 @@ DOMAIN-SUFFIX,tidal.com
 USER-AGENT,com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 # (Video)
+# > Apple TV
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
 # > All4
 USER-AGENT,All4*
 DOMAIN-SUFFIX,c4assets.com
