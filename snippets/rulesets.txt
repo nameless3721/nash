@@ -1,4 +1,4 @@
-surge_ruleset=DIRECT,rules/LocalAreaNetwork.list
+DIRECT,rules/LocalAreaNetwork.list
 DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
 DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.list
 🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/PROXY.list
