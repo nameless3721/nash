@@ -7,14 +7,14 @@ DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.l
 Ⓜ️ 微软服务,rules/MSServices.list
 📹 YouTube,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/YouTube.list
 🎥 NETFLIX,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/Netflix.list
-📺 巴哈姆特,rules/ConnersHua/Surge/Ruleset/Media/Bahamut.list
-📺 AbemaTV,rules/ConnersHua/Surge/Ruleset/Media/AbemaTV.list
-📲 电报吹水,rules/ConnersHua/Surge/Ruleset/Telegram.list
-🌍 国外媒体,rules/ConnersHua/Surge/Ruleset/GlobalMedia.list
-🌏 港台媒体,rules/ConnersHua/Surge/Ruleset/HKMTMedia.list
-🍎 苹果服务,rules/ConnersHua/Surge/Ruleset/Apple.list
-🔰 节点选择,rules/ConnersHua/Surge/Ruleset/Global.list
-DIRECT,rules/ConnersHua/Surge/Ruleset/China.list
+📺 巴哈姆特,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/Bahamut.list
+📺 AbemaTV,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/AbemaTV.list
+📲 电报吹水,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Telegram.list
+🌍 国外媒体,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/GlobalMedia.list
+🌏 港台媒体,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/HKMTMedia.list
+🍎 苹果服务,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Apple.list
+🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Global.list
+DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/China.list
 DIRECT,rules/NobyDa/Surge/Download.list
 DIRECT,[]GEOIP,CN
 🐟 选代理海外代理模式|选DIRECT仅规则代理模式,[]FINAL
