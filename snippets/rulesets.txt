@@ -1,6 +1,5 @@
 DIRECT,rules/LocalAreaNetwork.list
 DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
-DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.list
 🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/PROXY.list
 🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
 🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Advertising.list
@@ -14,6 +13,7 @@ DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.l
 🌏 港台媒体,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/HKMTMedia.list
 🍎 苹果服务,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Apple.list
 🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Global.list
+DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.list
 DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/China.list
 DIRECT,rules/NobyDa/Surge/Download.list
 DIRECT,[]GEOIP,CN
