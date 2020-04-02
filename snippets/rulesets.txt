@@ -17,4 +17,4 @@ DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/DIRECT.l
 DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/China.list
 DIRECT,rules/NobyDa/Surge/Download.list
 DIRECT,[]GEOIP,CN
-🐟 选代理海外代理模式|选DIRECT仅规则代理模式,[]FINAL
+🐟 规则外路由选择,[]FINAL
