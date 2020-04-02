@@ -156,7 +156,7 @@ DOMAIN-SUFFIX,my5.tv
 DOMAIN,d349g9zuie06uo.cloudfront.net
 # > myTV SUPER
 USER-AGENT,mytv*
-DOMAIN-KEYWORD,mytvsuper.com
+DOMAIN-KEYWORD,mytvsuper
 DOMAIN-SUFFIX,tvb.com
 # > Netflix
 USER-AGENT,Argo*
