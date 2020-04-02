@@ -1,8 +1,8 @@
 DIRECT,rules/LocalAreaNetwork.list
 DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
 🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/PROXY.list
-🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
-🛑 全球拦截,rules/ConnersHua/Surge/Ruleset/Advertising.list
+🛑 拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
+🛑 拦截,rules/ConnersHua/Surge/Ruleset/Advertising.list
 Ⓜ️ 微软服务,rules/MSServices.list
 📹 YouTube,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/YouTube.list
 🎥 NETFLIX,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Media/Netflix.list
