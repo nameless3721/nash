@@ -15,3 +15,7 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
+# > SMTP
+DOMAIN-KEYWORD,SMTP
+DOMAIN-KEYWORD,HELO
+DOMAIN-KEYWORD,Subject
