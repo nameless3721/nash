@@ -230,5 +230,6 @@ DOMAIN,dfp6rglgjqszk.cloudfront.net
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,YouTube*
 DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,youtube.com
+DOMAIN-KEYWORD,youtube
 DOMAIN,youtubei.googleapis.com
+DOMAIN-SUFFIX,gvt2.com
