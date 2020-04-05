@@ -1,5 +1,5 @@
 DIRECT,rules/LocalAreaNetwork.list
-DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
+DIRECT,https://raw.githubusercontent.com/nameless3721/nash/master/rules/ConnersHua/Surge/Ruleset/Unbreak.list
 🔰 节点选择,https://raw.githubusercontent.com/nameless3721/nash/master/rules/PROXY.list
 🛑 拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
 🛑 拦截,rules/ConnersHua/Surge/Ruleset/Advertising.list
