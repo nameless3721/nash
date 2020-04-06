@@ -8,14 +8,13 @@ dns:
   enable: true
   listen: 0.0.0.0:53
   default-nameserver:
-    - tcp://1.0.0.1
-    - 119.29.29.29
+    - tcp://223.5.5.5
   ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.10.0.1/16
   nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
+    - tcp://1.2.4.8
+    - tcp://223.6.6.6
   fallback:
     - https://cloudflare-dns.com/dns-query
     - tls://1.0.0.1:853
