@@ -20,7 +20,6 @@ dns:
   fallback:
     - https://cloudflare-dns.com/dns-query
     - tls://1.0.0.1:853
-    - https://dns.google/dns-query
 Proxy: ~
 Proxy Group: ~
 Rule: ~
