@@ -15,11 +15,9 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.10.0.1/16
   nameserver:
+    - tcp://185.244.151.162
     - tcp://1.2.4.8
     - tcp://223.6.6.6
-  fallback:
-    - https://cloudflare-dns.com/dns-query
-    - tls://1.0.0.1:853
 Proxy: ~
 Proxy Group: ~
 Rule: ~
