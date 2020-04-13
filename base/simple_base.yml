@@ -10,14 +10,14 @@ dns:
   enable: true
   listen: 0.0.0.0:53
   default-nameserver:
-    - tcp://223.5.5.5
+    - 223.5.5.5
   ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.10.0.1/16
   nameserver:
-    - tcp://185.244.151.162
-    - tcp://1.2.4.8
-    - tcp://223.6.6.6
+    - 185.244.151.162
+    - 1.2.4.8
+    - 223.6.6.6
 Proxy: ~
 Proxy Group: ~
 Rule: ~
