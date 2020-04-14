@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 hosts:
-  '*.googleapis.cn': 172.217.24.195
+  services.googleapis.cn : 172.217.24.195
 dns:
   enable: true
   listen: 0.0.0.0:53
