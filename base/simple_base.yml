@@ -18,7 +18,7 @@ dns:
   nameserver:
     - https://doh.rixcloud.dev/dns-query
     - https://120.25.25.166/dns-query
-    - 223.6.6.6
+    - 119.29.29.29
 Proxy: ~
 Proxy Group: ~
 Rule: ~
