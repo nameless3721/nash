@@ -16,9 +16,9 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.10.0.1/16
   nameserver:
-    - https://doh.rixcloud.dev/dns-query
-    - https://120.25.25.166/dns-query
     - 119.29.29.29
+    # - https://doh.rixcloud.dev/dns-query
+    # - https://120.25.25.166/dns-query
 Proxy: ~
 Proxy Group: ~
 Rule: ~
