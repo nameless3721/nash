@@ -13,20 +13,22 @@ dns:
     - 223.5.5.5
     - 1.0.0.1
   ipv6: false
+{% if local.clash.new_field_name == "true" %}
   enhanced-mode: fake-ip
   fake-ip-range: 198.10.0.1/16
   nameserver:
     - 119.29.29.29
     - 223.6.6.6
-    # - https://dns.alidns.com/dns-query
-    # - https://doh.rixcloud.dev/dns-query
-    # - https://120.25.25.166/dns-query
-{% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
 rules: ~
 {% else %}
-Proxy: ~
-Proxy Group: ~
-Rule: ~
+  enhanced-mode: redir-host
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.rixcloud.dev/dns-query
+    - https://120.25.25.166/dns-query
+proxies: ~
+proxy-groups: ~
+rules: ~
 {% endif %}
