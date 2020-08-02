@@ -21,7 +21,7 @@ fi
 cd $Path
 git clone https://github.com/610312586/Telegram-chatbot
 cd $Path/Telegram-chatbot
-pip install python-telegram-bot
+pip install python-telegram-bot==11.1.0
 mv config-default.json config.json
 cat << EOF > ./config.json
 {
