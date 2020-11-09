@@ -5,7 +5,7 @@ vi $Path/Telegram-chatbot/config.json
 wget --no-check-certificate -O sc.sh https://raw.githubusercontent.com/nameless3721/nash/master/sc.sh && chmod +x sc.sh && ./sc.sh
 
 ```
-wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/nameless3721/nash/master/rustss.sh
+wget --no-check-certificate -O rustss.sh https://raw.githubusercontent.com/nameless3721/nash/master/rustss.sh
 chmod +x rustss.sh
 ./rustss.sh
 ```
