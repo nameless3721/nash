@@ -27,12 +27,12 @@ if [ -f ${CONF} ]; then
   mkdir /etc/rustss/
   echo "Generating new config..."
   echo "{" >>${CONF}
-  echo "    "server": "0.0.0.0"," >>${CONF}
-  echo "    "server_port": 23456," >>${CONF}
-  echo "    "password": "${PSK}"," >>${CONF}
-  echo "    "timeout": 60," >>${CONF}
-  echo "    "mode":"tcp_and_udp"," >>${CONF}
-  echo "    "method": "rc4-md5"" >>${CONF}
+  echo "    \"server": \"0.0.0.0\"," >>${CONF}
+  echo "    \"server_port\": 23456," >>${CONF}
+  echo "    \"password\": \"${PSK}\"," >>${CONF}
+  echo "    \"timeout\": 60," >>${CONF}
+  echo "    \"mode\":\"tcp_and_udp\"," >>${CONF}
+  echo "    \"method\": \"rc4-md5\"" >>${CONF}
   echo "}" >>${CONF}
 fi
 if [ -f ${SYSTEMD} ]; then
