@@ -8,7 +8,7 @@ wget --no-check-certificate -O sc.sh https://raw.githubusercontent.com/nameless3
 wget --no-check-certificate -O rustss.sh https://raw.githubusercontent.com/nameless3721/nash/master/rustss.sh
 chmod +x rustss.sh
 ./rustss.sh
-nano /etc/snell/rustss-server.conf
+nano /etc/rustss/rustss-server.conf
 systemctl restart rustss
 systemctl status rustss
 
