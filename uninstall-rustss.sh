@@ -8,5 +8,5 @@ rm -f /usr/bin/ssserver
 rm -f /usr/bin/sslocal
 rm -f /usr/bin/ssmanager
 rm -f /usr/bin/ssurl
-rm -f /etc/rustss/rustss-server.conf
+rm -f /etc/rustss/rustss-server.json
 rm -rf /etc/rustss/
