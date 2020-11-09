@@ -4,9 +4,6 @@ export PATH
 CONF="/etc/rustss/rustss-server.json"
 SYSTEMD="/etc/systemd/system/rustss.service"
 apt-get -y install nano wget
-read -p "输入端口" port
-read -p "输入密码或者随机" shadowsockspwd
-[ -z "${shadowsockspwd}" ] && shadowsockspwd='${PSK}'
 cd ~/
 wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.8.23/shadowsocks-v1.8.23.x86_64-unknown-linux-gnu.tar.xz
 tar -xvJf rustss.tar.xz
@@ -28,12 +25,16 @@ if [ -f ${CONF} ]; then
   else
     echo "Using predefined PSK: ${PSK}"
   fi
+  read -p "输入端口或者23456" port
+  [ -z "${port}" ] && port='23456'
+  read -p "输入密码或者随机" rustsspwd
+  [ -z "${rustsspwd}" ] && rustsspwd=${PSK}
   mkdir /etc/rustss/
   echo "Generating new config..."
   echo "{" >>${CONF}
   echo "    \"server\": \"0.0.0.0\"," >>${CONF}
   echo "    \"server_port\": $port," >>${CONF}
-  echo "    \"password\": \"$shadowsockspwd\"," >>${CONF}
+  echo "    \"password\": \"$rustsspwd\"," >>${CONF}
   echo "    \"timeout\": 60," >>${CONF}
   echo "    \"mode\":\"tcp_and_udp\"," >>${CONF}
   echo "    \"method\": \"rc4-md5\"" >>${CONF}
