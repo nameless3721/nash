@@ -60,4 +60,5 @@ else
   systemctl daemon-reload
   systemctl enable rustss
   systemctl start rustss
+  cat /etc/rustss/rustss-server.json
 fi
