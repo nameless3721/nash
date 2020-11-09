@@ -16,3 +16,14 @@ wget --no-check-certificate -O uninstall-rustss.sh https://raw.githubusercontent
 chmod +x uninstall-rustss.sh
 ./uninstall-rustss.sh
 ```
+```
+wget https://github.com/pymumu/smartdns/releases/download/Release33/smartdns.1.2020.09.08-2235.x86_64-debian-all.deb
+dpkg -i smartdns*.deb
+wget https://raw.nameless13.com/api/public/dl/5E_72S7J/smartdns.conf
+mv -f smartdns.conf /etc/smartdns/
+apt-get -y install resolvconf
+echo "nameserver 127.0.0.1" >>/etc/resolvconf/resolv.conf.d/head
+nano /etc/smartdns/smartdns.conf
+systemctl start smartdns
+systemctl enable smartdns
+```
