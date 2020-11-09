@@ -23,6 +23,7 @@ wget https://raw.githubusercontent.com/nameless3721/nash/master/smartdns.conf
 mv -f smartdns.conf /etc/smartdns/
 apt-get -y install resolvconf
 echo "nameserver 127.0.0.1" >>/etc/resolvconf/resolv.conf.d/head
+/etc/init.d/resolvconf restart
 nano /etc/smartdns/smartdns.conf
 systemctl start smartdns
 systemctl enable smartdns
