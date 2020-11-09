@@ -60,5 +60,9 @@ else
   systemctl daemon-reload
   systemctl enable rustss
   systemctl start rustss
-  ssurl -e /etc/rustss/rustss-server.json
 fi
+echo '##########################################################'
+echo '#修改配置:nano /etc/rustss/rustss-server.json'
+echo '#启动ss:systemctl restart rustss'
+echo '#获取url自行改ip:ssurl -e /etc/rustss/rustss-server.json'
+echo '##########################################################'
