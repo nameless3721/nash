@@ -8,7 +8,13 @@ wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shad
 tar -xvJf rustss.tar.xz
 rm -f rustss.tar.xz
 chmod +x ssserver
+chmod +x sslocal
+chmod +x ssmanager
+chmod +x ssurl
 mv -f ssserver /usr/local/bin/
+mv -f sslocal /usr/local/bin/
+mv -f ssmanager /usr/local/bin/
+mv -f ssurl /usr/local/bin/
 if [ -f ${CONF} ]; then
   echo "Found existing config..."
   else
