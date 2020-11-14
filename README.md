@@ -24,7 +24,8 @@ mv -f smartdns.conf /etc/smartdns/
 apt-get -y install resolvconf
 echo "nameserver 127.0.0.1" >>/etc/resolvconf/resolv.conf.d/head
 /etc/init.d/resolvconf restart
-nano /etc/smartdns/smartdns.conf
-systemctl start smartdns
+#nf
+sed -i "s/#server 88.88.88.88 -group nf/server 解锁ip -group nf/g" /etc/smartdns/smartdns.conf
+systemctl restart smartdns
 systemctl enable smartdns
 ```
