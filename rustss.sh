@@ -57,6 +57,8 @@ else
   echo "LimitCORE=infinity" >>${SYSTEMD}
   echo "LimitNOFILE=65535" >>${SYSTEMD}
   echo "ExecStart=/usr/local/bin/ssserver -c /etc/rustss/rustss-server.json -v" >>${SYSTEMD}
+  echo "StandardOutput=file:/etc/rustss/rust.log" >>${SYSTEMD}
+  echo "StandardError=file:/etc/rustss/rust.log" >>${SYSTEMD}
   echo "Restart=always" >>${SYSTEMD}
   echo "RestartSec=10" >>${SYSTEMD}
   echo "" >>${SYSTEMD}
