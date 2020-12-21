@@ -56,7 +56,7 @@ else
   echo "LimitRSS=infinity" >>${SYSTEMD}
   echo "LimitCORE=infinity" >>${SYSTEMD}
   echo "LimitNOFILE=65535" >>${SYSTEMD}
-  echo "ExecStart=/usr/local/bin/ssserver -c /etc/rustss/rustss-server.json" >>${SYSTEMD}
+  echo "ExecStart=/usr/local/bin/ssserver -c /etc/rustss/rustss-server.json -v" >>${SYSTEMD}
   echo "Restart=always" >>${SYSTEMD}
   echo "RestartSec=10" >>${SYSTEMD}
   echo "" >>${SYSTEMD}
