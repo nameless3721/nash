@@ -43,7 +43,7 @@ mkdir /etc/nfset &> /dev/null
 wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nflist.txt &> /dev/null
 wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nfset.service &> /dev/null
 mv -f nflist.txt /etc/nfset/ &> /dev/null
-mv -f nfset.service /etc/systemd/system/ &> /dev/null
+mv -f nfset.service /usr/lib/systemd/system/ &> /dev/null
 systemctl start  nfset &> /dev/null
 systemctl enable nfset &> /dev/null
 echo "Completed：依赖安装完毕"
