@@ -33,4 +33,3 @@ systemctl enable smartdns
 #解锁nftv
 wget --no-check-certificate -qO nfset.sh https://raw.githubusercontent.com/nameless3721/nash/master/nfset.sh && bash nfset.sh
 ```
-```
