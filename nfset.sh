@@ -39,13 +39,13 @@ lastConfigTmp="/iptables_nat.sh_tmp"
 echo "正在安装依赖...."
 yum install -y ipset bind-utils &> /dev/null
 apt install -y ipset dnsutils &> /dev/null
-mkdir /etc/nfset
-wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nflist.txt
-wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nfset.service
-mv -f nflist.txt /etc/nfset/
-mv -f nfset.service /etc/systemd/system/
-systemctl start  nfset
-systemctl enable nfset
+mkdir /etc/nfset &> /dev/null
+wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nflist.txt &> /dev/null
+wget https://raw.githubusercontent.com/nameless3721/iptablesUtils/master/nfset/nfset.service &> /dev/null
+mv -f nflist.txt /etc/nfset/ &> /dev/null
+mv -f nfset.service /etc/systemd/system/ &> /dev/null
+systemctl start  nfset &> /dev/null
+systemctl enable nfset &> /dev/null
 echo "Completed：依赖安装完毕"
 echo ""
 ####
