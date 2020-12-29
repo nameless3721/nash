@@ -29,3 +29,9 @@ sed -i "s/#server 88.88.88.88 -group nf/server 解锁ip -group nf/g" /etc/smartd
 systemctl restart smartdns
 systemctl enable smartdns
 ```
+```
+#解锁nftv
+wget --no-check-certificate -qO nfset.sh https://raw.githubusercontent.com/nameless3721/nash/master/nfset.sh && bash nfset.sh
+```
+```
+```
