@@ -34,4 +34,3 @@ systemctl enable smartdns
 wget --no-check-certificate -qO nfset.sh https://raw.githubusercontent.com/nameless3721/nash/master/nfset.sh && bash nfset.sh
 ```
 ```
-```
