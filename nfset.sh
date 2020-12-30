@@ -300,6 +300,8 @@ do
         ;;
     删除转发规则)
         rmDnat
+        systemctl stop nfset
+        systemctl disable nfset
         #break
         ;;
     # 增加到IP的转发)
