@@ -14,7 +14,7 @@ touch $conf
     echo "# Website:  http://www.arloor.com/                          #"
     echo "# Author: ARLOOR <admin@arloor.com>                         #"
     echo "# Github: https://github.com/arloor/iptablesUtils           #"
-    echo "# 端口都填443目标netflix.com 劫持tcp53dns需本地支持tcp53dns #"
+    echo "# 端口都填443目标netflix.com                                #"
     echo "# smartdns不支持centos自行 https://pymumu.github.io/smartdns#"
     echo "#############################################################"
     echo
