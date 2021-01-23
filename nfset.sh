@@ -327,8 +327,8 @@ do
         rm -rf smartdns*.deb
         wget https://raw.githubusercontent.com/nameless3721/nash/master/smartdns.conf
         mv -f smartdns.conf /etc/smartdns/
-        read -p "输入nf解锁dns默认127.0.0.1" netflix
-        [ -z "${netflix}" ] && netflix='127.0.0.1'
+        read -p "输入nf解锁dns默认1.1.1.1" netflix
+        [ -z "${netflix}" ] && netflix='1.1.1.1'
         sed -i "s/#server 88.88.88.88 -group nf/server $netflix -group nf/g" /etc/smartdns/smartdns.conf
         apt-get -y install resolvconf
         echo -e "nameserver 127.0.0.1\nnameserver 1.0.0.1" >>/etc/resolvconf/resolv.conf.d/head
