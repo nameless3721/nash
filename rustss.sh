@@ -5,7 +5,7 @@ CONF="/etc/rustss/rustss-server.json"
 SYSTEMD="/etc/systemd/system/rustss.service"
 apt-get -y install nano wget
 cd ~/
-wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.8.23/shadowsocks-v1.8.23.x86_64-unknown-linux-gnu.tar.xz
+wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.10.5/shadowsocks-v1.10.5.aarch64-unknown-linux-musl.tar.xz
 tar -xvJf rustss.tar.xz
 rm -f rustss.tar.xz
 chmod +x ssserver
@@ -37,7 +37,7 @@ if [ -f ${CONF} ]; then
   echo "    \"password\": \"$rustsspwd\"," >>${CONF}
   echo "    \"timeout\": 60," >>${CONF}
   echo "    \"mode\":\"tcp_and_udp\"," >>${CONF}
-  echo "    \"method\": \"rc4-md5\"" >>${CONF}
+  echo "    \"method\": \"aes-128-gcm\"" >>${CONF}
   echo "}" >>${CONF}
 fi
 if [ -f ${SYSTEMD} ]; then
