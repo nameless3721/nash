@@ -5,7 +5,7 @@ CONF="/etc/rustss/rustss-server.json"
 SYSTEMD="/etc/systemd/system/rustss.service"
 apt-get -y install nano wget
 cd ~/
-wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.10.5/shadowsocks-v1.10.5.aarch64-unknown-linux-musl.tar.xz
+wget --no-check-certificate -O rustss.tar.xz https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.12.0-alpha.9/shadowsocks-v1.12.0-alpha.9.x86_64-unknown-linux-musl.tar.xz
 tar -xvJf rustss.tar.xz
 rm -f rustss.tar.xz
 chmod +x ssserver
