@@ -31,6 +31,7 @@ cat /etc/resolv.conf
 
 #替换解锁ip
 sed -i "s/#server 88.88.88.88 -group nf/server 解锁ip -group nf/g" /etc/smartdns/smartdns.conf
+rm -rf smartdns*.deb
 systemctl restart smartdns
 systemctl enable smartdns
 ```
