@@ -20,9 +20,15 @@ wget https://github.com/pymumu/smartdns/releases/download/Release36.1/smartdns.1
 dpkg -i smartdns*.deb
 wget https://raw.githubusercontent.com/nameless3721/nash/master/smartdns.conf
 mv -f smartdns.conf /etc/smartdns/
-apt-get -y install resolvconf
-echo "nameserver 127.0.0.1" >>/etc/resolvconf/resolv.conf.d/head
-/etc/init.d/resolvconf restart
+mkdir -p /etc/systemd/resolved.conf.d/
+cat >/etc/systemd/resolved.conf.d/99-dns.conf << EOF
+[Resolve]
+DNS=127.0.0.1 1.1.1.1
+EOF
+ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+systemctl daemon-reload && systemctl restart systemd-resolved.service && systemctl status -l systemd-resolved.service --no-pager
+cat /etc/resolv.conf
+
 #替换解锁ip
 sed -i "s/#server 88.88.88.88 -group nf/server 解锁ip -group nf/g" /etc/smartdns/smartdns.conf
 systemctl restart smartdns
