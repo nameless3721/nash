@@ -33,7 +33,8 @@ cat /etc/resolv.conf
 sed -i "s/#server 88.88.88.88 -group nf/server 解锁ip -group nf/g" /etc/smartdns/smartdns.conf
 rm -rf smartdns*.deb
 systemctl restart smartdns
-systemctl enable smartdns
+systemctl enable smartdns --now
+dpkg -r smartdns
 ```
 ```
 #解锁nftv
