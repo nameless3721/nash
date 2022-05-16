@@ -35,6 +35,8 @@ rm -rf smartdns*.deb
 systemctl restart smartdns
 systemctl enable smartdns --now
 dpkg -r smartdns
+apt-mark hold smartdns
+#apt-mark unhold smartdns
 nano /etc/ssh/sshd_config
 systemctl restart sshd
 ```
