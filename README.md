@@ -16,7 +16,7 @@ chmod +x uninstall-rustss.sh
 ./uninstall-rustss.sh
 ```
 ```
-wget https://github.com/pymumu/smartdns/releases/download/Release36.1/smartdns.1.2022.04.05-2046.x86_64-debian-all.deb
+wget https://github.com/pymumu/smartdns/releases/download/all-best-ip/smartdns.1.2022.05.03-1046.x86_64-debian-all.deb
 dpkg -i smartdns*.deb
 wget https://raw.githubusercontent.com/nameless3721/nash/master/smartdns.conf
 mv -f smartdns.conf /etc/smartdns/
