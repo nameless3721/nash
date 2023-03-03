@@ -26,6 +26,12 @@ cat >/etc/systemd/resolved.conf.d/99-dns.conf << EOF
 DNS=127.0.0.1 1.1.1.1
 EOF
 ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+
+mkdir -p /etc/systemd/resolved.conf.d/
+cat >/etc/systemd/resolved.conf.d/98-disable-127-53.conf << EOF
+[Resolve]
+DNSStubListener=no
+EOF
 systemctl daemon-reload && systemctl restart systemd-resolved.service && systemctl status -l systemd-resolved.service --no-pager
 cat /etc/resolv.conf
 
